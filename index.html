@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Cordova1 : the cordova version (Do restore ancient ways).">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Cordova1</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/brickswong7/cordova1">View on GitHub</a>
+
+          <h1 id="project_title">Cordova1</h1>
+          <h2 id="project_tagline">the cordova version (Do restore ancient ways).</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/brickswong7/cordova1/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/brickswong7/cordova1/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="cordova40以下的版本the-cordova-version-do-restore-ancient-ways" class="anchor" href="#cordova40%E4%BB%A5%E4%B8%8B%E7%9A%84%E7%89%88%E6%9C%ACthe-cordova-version-do-restore-ancient-ways" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>cordova4.0以下的版本the cordova version (Do restore ancient ways).</h1>
+
+<p>今天做一个关于cordova的事情！<br>
+Today, i want to do something about the cordova!
+现在有些打包android----apk的工具，<br>
+Recently, there are some tools to package your application for android.<br>
+但是，我今天要做的事把cordova android 的版本降低到4.0一下
+ But now, i wanna restore the cordova version under 4.0 .0</p>
+
+<p>那我说明一下 为什么 这样做的原因：<br>
+ Now, i explain why i have to do that.
+真相就是：智能电视的<br>
+the reason is smart TV. 
+但是 在一些智能电视上 没有触屏识别，是一种传统的 键盘事件 ，那必须用keydown事件来操作。那cordova android 的版本 必须是4.0一下！<br>
+ But， the part of smart TVs is handled by remotes，which have not touchingscreen function，and that means we have to apply the cordova version below 4.0</p>
+
+<p>Steps:
+一：cordova创建一个App（cordova create a App）
+cordova create App bricks.wong1.com</p>
+
+<p>二：看一下 cordova platform 里面的可以应用的版本  (have a  look Available platforms)
+cordova platform ls
+Available platforms:
+  amazon-fireos ~3.6.3 (deprecated)
+  android ~5.2.0
+  blackberry10 ~3.8.0
+  browser ~4.1.0
+  firefoxos ~3.6.3
+  webos ~3.7.0
+  windows ~4.4.0
+  wp8 ~3.8.2 (deprecated)</p>
+
+<p>三：创建cordova android 3.6.4版本  （cordova android 3.6.4）
+cordova platform add android@3.6.4</p>
+
+<p>四：结果  Result: 
+Project successfully created.</p>
+
+<h2>
+<a id="using-this-version-of-cordova-with-older-version-of-cordova-android-is-being-deprecated-consider-upgrading-to-cordova-android500-or-newer" class="anchor" href="#using-this-version-of-cordova-with-older-version-of-cordova-android-is-being-deprecated-consider-upgrading-to-cordova-android500-or-newer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using this version of Cordova with older version of cordova-android is being deprecated. Consider upgrading to cordova-android@5.0.0 or newer.</h2>
+
+<p>上面这段话 显示在screen是正常的，提示你目前的cordova android 的版本较低。建议更新一下
+(That means the version of cordova-android is being deprecated and suggest update the version,that just a suggestion not a fault)</p>
+
+<h3>
+<a id="plugin-doesnt-support-this-projects-cordova-android-version-cordova-android-364-failed-version-requirement-400" class="anchor" href="#plugin-doesnt-support-this-projects-cordova-android-version-cordova-android-364-failed-version-requirement-400" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plugin doesn't support this project's cordova-android version. cordova-android: 3.6.4, failed version requirement: &gt;=4.0.0</h3>
+
+<h3>
+<a id="skipping-cordova-plugin-whitelist-for-android" class="anchor" href="#skipping-cordova-plugin-whitelist-for-android" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Skipping 'cordova-plugin-whitelist' for android</h3>
+
+<p>这句话也是正常的，不是报错。是说 插件不支持目前的版本 最少4.0.0</p>
+
+<p>五：看一下cordova 里面的paltform
+cordova platform ls:
+result:
+Installed platforms:
+  android 3.6.4
+Available platforms:
+  amazon-fireos ~3.6.3 (deprecated)
+  blackberry10 ~3.8.0
+  browser ~4.1.0
+  firefoxos ~3.6.3
+  webos ~3.7.0
+  windows ~4.4.0
+  wp8 ~3.8.2 (deprecated)</p>
+
+<p>六：恭喜你 。你需要的版本成功了！Congratulations！</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Cordova1 maintained by <a href="https://github.com/brickswong7">brickswong7</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
