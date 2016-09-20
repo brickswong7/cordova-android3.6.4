@@ -2,7 +2,7 @@
 the cordova version (Do restore ancient ways).
 Today, i want to do something about the cordova! 
 Recently, there are some tools to package your application for android.
-But now, i wanna restore the cordova version under 4.0 .0!
+But now, i wanna restore the cordova androidversion under 4.0 .0!
 Now, i explain why i have to do that. 
 the reason is smart TV. 
 But， the part of smart TVs is handled by remotes，which have not touchingscreen function，and that means we have to apply the cordova version below 4.0
